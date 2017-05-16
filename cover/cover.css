@@ -1,0 +1,431 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 89%;
+}
+
+body {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 20px;
+}
+
+
+/*
+ * Header
+ */
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.75);
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+.Services {
+    align: left;
+}
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 20px;
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: #999; /* IE8 proofing */
+  color: rgba(255,255,255,.5);
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 700px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Social Media Icons */
+.center {
+  display: table;
+  width: 100%;
+  height: 21vh;
+}
+
+#social h2 {
+  color: #fff;
+  font-family: Futura,"Trebuchet MS",Arial,sans-serif;
+  font-weight: 100;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#social {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#social ul {
+  text-align: center;
+  padding-left: 0px;
+}
+
+#social li {
+  list-style-type: none;
+  text-align: center;
+  display: inline-block;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#social li:first-child {
+  margin-left: 0px;
+}
+
+#social li:last-child {
+  margin-right: 0px;
+}
+
+
+/** Facebook **/
+
+.facebook {
+  width: 50px;
+  height: 50px;
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+}
+
+.facebook .border {
+  background: transparent;
+  outline: none;
+  color: rgba(255, 255, 255, 0.3);
+  width: 50px;
+  height: 50px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  transition: all .2s ease-in-out;
+}
+
+.facebook .border:hover {
+  background: #3b5998;
+  border-color: #436aaf;
+  color: rgba(255, 255, 255, 0.9);
+  transform: scale(1.2);
+}
+
+.fa.fa-facebook {
+  font-size: 25px;
+  -ms-transform: rotate(-45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-45deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(-45deg);
+}
+
+
+/** Twitter **/
+
+.twitter {
+  width: 50px;
+  height: 50px;
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+}
+
+.twitter .border {
+  background: transparent;
+  outline: none;
+  color: rgba(255, 255, 255, 0.3);
+  width: 50px;
+  height: 50px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  transition: all .2s ease-in-out;
+}
+
+.twitter .border:hover {
+  background: #00aced;
+  border-color: #72c6e6;
+  color: rgba(255, 255, 255, 0.9);
+  transform: scale(1.2);
+}
+
+.fa.fa-twitter {
+  font-size: 25px;
+  -ms-transform: rotate(-45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-45deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(-45deg);
+}
+
+
+/** Instagram **/
+
+.instagram {
+  width: 50px;
+  height: 50px;
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+}
+
+.instagram .border {
+  background: transparent;
+  outline: none;
+  color: rgba(255, 255, 255, 0.3);
+  width: 50px;
+  height: 50px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  transition: all .2s ease-in-out;
+}
+
+.instagram .border:hover {
+  background: #517fa4;
+  border-color: #7495af;
+  color: rgba(255, 255, 255, 0.9);
+  transform: scale(1.2);
+}
+
+.fa.fa-instagram {
+  font-size: 25px;
+  -ms-transform: rotate(-45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-45deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(-45deg);
+}
+
+
+
+
+
+@import "compass/css3";
+
+@import "compass/css3";
+@import url(http://fonts.googleapis.com/css?family=Patua+One|Open+Sans);
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+  background:#353a40;
+}
+
+table {
+  border-collapse: separate;
+  background:#fff;
+  @include border-radius(5px);
+  margin:50px auto;
+  @include box-shadow(0px 0px 5px rgba(0,0,0,0.3));
+}
+
+thead {
+  @include border-radius(5px);
+}
+
+thead th {
+  font-family: 'Patua One', cursive;
+  font-size:16px;
+  font-weight:400;
+  color:#fff;
+  @include text-shadow(1px 1px 0px rgba(0,0,0,0.5));
+  text-align:left;
+  padding:20px;
+  @include background-image(linear-gradient(#646f7f, #4a5564));
+  border-top:1px solid #858d99;
+
+  &:first-child {
+   @include border-top-left-radius(5px);
+  }
+
+  &:last-child {
+    @include border-top-right-radius(5px);
+  }
+}
+
+tbody tr td {
+  font-family: 'Open Sans', sans-serif;
+  font-weight:400;
+  color:#5f6062;
+  font-size:13px;
+  padding:20px 20px 20px 20px;
+  border-bottom:1px solid #e0e0e0;
+
+}
+
+tbody tr:nth-child(2n) {
+  background:#f0f3f5;
+}
+
+tbody tr:last-child td {
+  border-bottom:none;
+  &:first-child {
+    @include border-bottom-left-radius(5px);
+  }
+  &:last-child {
+    @include border-bottom-right-radius(5px);
+  }
+}
+
+tbody:hover > tr td {
+  @include opacity(0.5);
+
+  /* uncomment for blur effect */
+  /* color:transparent;
+  @include text-shadow(0px 0px 2px rgba(0,0,0,0.8));*/
+}
+
+tbody:hover > tr:hover td {
+  @include text-shadow(none);
+  color:#2d2d2d;
+  @include opacity(1.0);
+}
